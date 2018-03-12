@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/JJIvan/webpackTest/issues"
   },
-  "homepage": "https://github.com/JJIvan/webpackTest#readme"
+  "homepage": "https://github.com/JJIvan/webpackTest#readme",
+  "devDependencies": {
+    "webpack": "^4.1.1"
+  }
 }
