@@ -11,5 +11,13 @@ module.exports = {
   }, 
   plugins: [
     new UglifyJsPlugin()
-  ]
+  ],
+   module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [ 'style-loader', 'css-loader' ]
+      }
+    ]
+  }
 }
