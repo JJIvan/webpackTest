@@ -1,6 +1,7 @@
 // webpack.config.js
 var path = require('path')
 var UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+var HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   mode: 'development',
@@ -10,7 +11,10 @@ module.exports = {
     filename: 'bundle.js'
   }, 
   plugins: [
-    new UglifyJsPlugin()
+    new UglifyJsPlugin(),
+    new HtmlWebpackPlugin({
+      template: './src/index.html'
+    })
   ],
    module: {
     rules: [
